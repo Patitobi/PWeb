@@ -16,6 +16,15 @@ header{
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
 	text-align: center;
 }
+#can0{
+	position: absolute;
+	right:10%;
+	top: 12rem;
+	background-color: rgba(42, 41, 41, 0.856);
+	border-radius: 20px;
+	border: solid;
+	border-color: #fff;
+}
 .logo{
     margin: 10px 0 0 20px;
     color: rgb(224, 146, 0);
@@ -36,7 +45,7 @@ nav
 }
 nav ul
 {
-	margin: 0;
+	margin: 0 0 0 0;
 	padding: 0;
 	display: flex;
 }
@@ -47,7 +56,7 @@ nav ul li
 nav ul li a
 {
 	display: block;
-	margin: 0 0 0 0;
+	margin: 0 0 0 5px;
 	padding: 10px 20px;
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.856);
@@ -61,7 +70,60 @@ nav ul li a:hover
 	transition: 0.5s;
     border-radius: 5px;
 }
+#sec0{
+	padding: 5rem 3rem 0 3rem;
+}
+#sec1{
+	background-color: blue;
+}
+#sec2{
+	background-color: aquamarine;
+}
+#sec3{
+background-color: chartreuse;
+}
+.section{
+	color:black;
+	height: 1080px;
+	max-width: 1920px;
+	background-color: rgb(35, 35, 35);
+}
+#title{
+	position: relative;
+	color: rgb(224, 146, 0);
+	left: 9%;
+	top: 15rem;
+	font-size: 2rem;
+	z-index: 0;
+	background-color: rgba(42, 41, 41, 0.856);
+	padding: 20px;
+	border-radius: 15px;
+	border: 5px;
+	border-style: solid;
+}
+@media (max-width: 1000px){
+	#can0{
+		top: 25rem;
+		right: 35%;
+	}
+	#title{
+		top: 7rem;
+	}
+}
+
 @media (max-width: 800px){
+	#sec0{
+		padding: 5rem 0 0 0;
+	}
+	nav ul li a
+	{
+		margin: 5px 5px 0 5px;
+	}
+	#title{
+		font-size: 1.5rem;
+		left: 3rem;
+		top: 7rem;
+	}
 	.menu-toggle
 	{
 		display: block;
@@ -98,30 +160,20 @@ nav ul li a:hover
 	{
         display: block;
 	}
+	#can0{
+		right: 15%;
+	}
 }
-#sec0{
-
+@media (max-width: 500px){
+	/* #can0{
+		right: 15%;
+	} */
 }
-#sec1{
-	background-color: blue;
-}
-#sec2{
-	background-color: aquamarine;
-}
-#sec3{
-background-color: chartreuse;
-}
-.section{
-	color:black;
-	height: 1080px;
-	max-width: 1920px;
-	background-color: rgb(35, 35, 35);
-}
-#title{
-	position: absolute;
-	color: rgb(224, 146, 0);
-	left: 15rem;
-	top: 15rem;
-	font-size: 2rem;
-	z-index: 0;
+@media (max-width: 450px){
+	#can0{
+		right: 1rem;
+	}
+	#title{
+		font-size: 1rem;
+	}
 }
