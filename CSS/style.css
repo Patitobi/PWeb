@@ -5,20 +5,21 @@ body{
     background-attachment: fixed;
 }
 header{
+	padding: 5px 0 5px 0;
+	z-index: 1;
 	position: fixed;
-	width: 70%;
-    margin: 20px 15%;
-    background-color: rgba(60, 60, 60, 0.856);
+	width: 90%;
+    margin:  1rem 5% 0 5%;
+    background-color: rgba(42, 41, 41, 0.856);
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	text-align: center;
 }
 .logo{
-    margin-left: 20px;
+    margin: 10px 0 0 20px;
     color: rgb(224, 146, 0);
     width: 50px;
-    height: 50px;
-	line-height: 60px;
 	text-align: center;
 	box-sizing: border-box;
 	float: left;
@@ -46,7 +47,7 @@ nav ul li
 nav ul li a
 {
 	display: block;
-	margin: 10px 0;
+	margin: 0 0 0 0;
 	padding: 10px 20px;
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.856);
@@ -60,13 +61,13 @@ nav ul li a:hover
 	transition: 0.5s;
     border-radius: 5px;
 }
-@media (max-width: 1000px){
+@media (max-width: 800px){
 	.menu-toggle
 	{
 		display: block;
 		width: 40px;
 		height: 40px;
-		margin: 10px;
+		margin: 1px 3px 0 0;
 		float: right;
 		cursor: pointer;
 		text-align: center;
@@ -98,24 +99,29 @@ nav ul li a:hover
         display: block;
 	}
 }
+#sec0{
 
-@media (max-width: 1200px)
-{
-		header
-	{
-		margin: 20px 15%;
-	}
 }
 #sec1{
-	background-color: rgba(60, 60, 60, 0.856);
+	background-color: blue;
+}
+#sec2{
+	background-color: aquamarine;
+}
+#sec3{
+background-color: chartreuse;
+}
+.section{
+	color:black;
 	height: 1080px;
 	max-width: 1920px;
-	color:black;
+	background-color: rgb(35, 35, 35);
 }
 #title{
-	position: relative;
+	position: absolute;
 	color: rgb(224, 146, 0);
-	left: 300px;
-	top: 300px;
-	font-size: 50px;
+	left: 15rem;
+	top: 15rem;
+	font-size: 2rem;
+	z-index: 0;
 }
