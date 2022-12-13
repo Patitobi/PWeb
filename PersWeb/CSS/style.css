@@ -9,7 +9,7 @@ body{
 }
 header{
 	padding: 5px 0 5px 0;
-	z-index: 1;
+	z-index: 5;
 	position: fixed;
 	width: 90%;
     margin:  1rem 5% 0 5%;
@@ -19,30 +19,17 @@ header{
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
 	text-align: center;
 }
-#can0{
-	background-color: rgb(35, 35, 35);
-	border-bottom: solid #fff 5px;
-}
-#bild{
-	position: absolute;
-	right:10%;
-	top: 5rem;
-}
-#name{
-	position: relative;
-	left: 6rem;
-	font-size: 2rem;
-	color: #fff;
+
+#TKbild{
+	border-bottom: solid 6px #fff;
+	display: block;
 }
 .logo{
-    margin: 10px 0 0 20px;
+    margin: 5px 0 5px 20px;
     color: rgb(224, 146, 0);
-    font-size: 1.5rem;
-	text-align: center;
 	box-sizing: border-box;
 	float: left;
-	font-weight: 700;
-	text-decoration: none;
+	height: 40px;
 }
 nav
 {
@@ -91,31 +78,141 @@ nav ul li a:hover
 	font-size: 2.5rem;
 }
 .section{
-	height: 600px;
+	text-align: center;
+	height: 700px;
 	width: 95,5%;
 	background-color: rgb(35, 35, 35);
 }
 #Home{
-	height: 600px;
+	text-align: left;
+	height: auto;
 	width: 95,5%;
 	background-color: rgb(35, 35, 35);
-	padding: 5rem 5rem 0 5rem;
+	padding: 5rem 2rem 5rem 2rem;
 }
 #AboutMe{
 	background-color: rgb(35, 35, 35);
-	padding: 7rem 15rem 0 15rem;
+	padding: 2rem 5rem 5rem 5rem;
+	height: auto;
+}
+#AM_bild{
+	height: auto;
+	width: 80%;
 }
 #Qualifications{
 	background-color: rgb(35, 35, 35);
-	padding: 7rem 15rem 0 15rem;
+	padding: 2rem 5rem 3rem 5rem;
+	height: max-content;
+
 }
-#MyContent{
+#MQ_div{
+	padding: 3rem 0 3rem 0;
+	top: 10rem;
+	width: 100%;
+	height: 90%;
+	border: solid;
+	border-color: rgb(224, 146, 0);
+	border-radius: 50px;
+	background-color: #232323;
+}
+.MQ_bereiche{
+	display: inline;
+	margin: 0 20px 0 20px;
+}
+#MQ_über{
+	position: relative;
+	left: -15px;
+	display: block;
+	color: #fff;
+	font-size: 3rem;
+	margin: 10px 0 10px 0;
+}
+.MQ_bild{
+	height: 400px;
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+}
+.MQ_bild:hover{
+	z-index: 3;
+	height: 600px;
+}
+#Website_Creaton{
 	background-color: rgb(35, 35, 35);
-	padding: 7rem 15rem 0 15rem;
+	padding: 2rem 5rem 3rem 5rem;
+	height: auto;
+}
+#WC_bilder{
+	padding: 2rem 0 3rem 0;
+	top: 10rem;
+	width: 100%;
+	height: 80%;
+	border: solid;
+	border-color: rgb(224, 146, 0);
+	border-radius: 50px;
+	background-color: #232323;
+}
+.WC_text{
+	position: relative;
+	text-align: center;
+	font-size: 2.5rem;
+	color: #fff;
+}
+.WC_bild{
+	position: relative;
+	margin: 5px;
+	height: 400px;
+	transition: 0.5s;
+	z-index: 1;
+}
+.Desktop{
+	height: 600px;
+	width: 300px;
+	display: inline;
+}
+.Handy{
+	height: 600px;
+	width: 150px;
+	display: inline;
+}
+.WC_bild:hover{
+	z-index: 3;
+	height: 450px;
+}
+.Handy:hover{
+	height: 900px;
+	width: 250px;
+}
+.Desktop:hover{
+	height: 900px;
+	width: 400px;
+}
+.WC_pack{
+	top: 15%;
+	width: auto;
+	height: auto;
+	position: relative;
+	display: inline-table;
+	margin: 0 30px 0 30px;
 }
 #ContactMe{
 	background-color: rgb(35, 35, 35);
-	padding: 7rem 15rem 0 15rem;
+	padding: 2rem 5rem 7rem 5rem;
+	height: auto;
+}
+.contact{
+	display: inline-table;
+	margin: 7rem 5rem 0 5rem;
+	color: #fff;
+}
+.CM_ueber{
+	margin: 10px 0 30px 0;
+	font-size: 3rem;
+	display: block;
+}
+.CM_text{
+	display: block;
+	font-size: 2rem;
 }
 .svg{
 	background-color: rgb(35, 35, 35);
@@ -123,11 +220,27 @@ nav ul li a:hover
 	height: 100%;
 	margin-bottom: -4px;
 }
+#name{
+	position: relative;
+	display: block;
+	left: 3.5rem;
+	font-size: 2rem;
+	color: #fff;
+}
+#bild{
+	position: relative;
+	display: inline-block;
+	left: 70%;
+	height: auto;
+	width: auto;
+}
 #wilkommen{
 	position: relative;
+	display: block;
+	max-width: fit-content;
+	left: 10%;
+	top: 300px;
 	color: rgb(224, 146, 0);
-	left: 9%;
-	top: 15rem;
 	font-size: 3rem;
 	z-index: 0;
 	background-color: rgba(42, 41, 41, 0.856);
@@ -136,13 +249,19 @@ nav ul li a:hover
 	border: 2px;
 	border-style: solid;
 }
-@media (max-width: 1000px){
+@media (max-width: 1200px){
+	#wilkommen{
+		display: block;
+		top: 20px;
+		left: 5%;
+		font-size: 2.5rem;
+	}
 	#bild{
-		top: 19rem;
+		top: 40px;
+		left: 30%;
 	}
 }
-
-@media (max-width: 800px){
+@media (max-width: 1000px){
 	#sec0{
 		padding: 5rem 0 0 0;
 	}
@@ -191,24 +310,72 @@ nav ul li a:hover
 	{
         display: block;
 	}
-	#can0{
-		right: 15%;
+}
+@media(max-width:950px){
+	#WC_bilder{
+		padding: 2rem 0 3rem 0;
+		top: 10rem;
+		width: 100%;
+		height: 80%;
+		border: solid;
+		border-color: rgb(224, 146, 0);
+		border-radius: 50px;
+		background-color: #232323;
 	}
-	#AboutMe{
-		height: 900px;
+	#TKbild{
+		width: 80%;
 	}
-	#Qualifications{
-		height: 900px;
+	.WC_bild{
+		position: relative;
+		margin: 5px;
+		height: auto;
+		max-height: 300px;
+		width: 90%;
+		transition: 0.5s;
+		z-index: 1;
 	}
-	#MyContent{
-		height: 900px;
+	.WC_bild:hover{
+		z-index: 3;
+		height: 350px;
 	}
-	#ContactMe{
-		height: 900px;
+	.Desktop{
+		width: auto;
+		height: 500px;
+	}
+	.Handy{
+		width: auto;
+		height: 500px;
+	}
+	.Handy:hover{
+		width: auto;
+		height: 500px;
+	}
+	.Desktop:hover{
+		width: auto;
+		height: 500px;
+	}
+	.contact{
+		margin-left: 0;
 	}
 }
-@media(max-width:670px){
+@media(max-width:950px){
+	.MQ_bild{
+		height: auto;
+		width: 70%;
+	}
+	.CM_text{
+		font-size: 2rem;
+		margin: 0;
+	}
+	.CM_ueber{
+		margin: 0;
+		font-size: 1rem;
+	}
 	#wilkommen{
-		font-size: 1.7rem;
+		width: fit-content;
+		margin-right: 20px;
+	}
+	.ueberschrift{
+		font-size: 1rem;
 	}
 }
