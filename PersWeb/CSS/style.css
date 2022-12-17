@@ -1,5 +1,7 @@
 html{
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body{
     margin: 0;
@@ -20,10 +22,6 @@ header{
 	text-align: center;
 }
 
-#TKbild{
-	border-bottom: solid 6px #fff;
-	display: block;
-}
 .logo{
     margin: 5px 0 5px 20px;
     color: rgb(224, 146, 0);
@@ -92,12 +90,12 @@ nav ul li a:hover
 }
 #AboutMe{
 	background-color: rgb(35, 35, 35);
-	padding: 2rem 5rem 5rem 5rem;
+	padding: 2rem 2rem 5rem 2rem;
 	height: auto;
 }
 #AM_bild{
 	height: auto;
-	width: 80%;
+	width: 90%;
 }
 #Qualifications{
 	background-color: rgb(35, 35, 35);
@@ -129,6 +127,7 @@ nav ul li a:hover
 }
 .MQ_bild{
 	height: 400px;
+	zoom: 1;
 	position: relative;
 	z-index: 1;
 	transition: 0.5s;
@@ -136,10 +135,11 @@ nav ul li a:hover
 .MQ_bild:hover{
 	z-index: 3;
 	height: 600px;
+	width: auto;
 }
 #Website_Creaton{
 	background-color: rgb(35, 35, 35);
-	padding: 2rem 5rem 3rem 5rem;
+	padding: 2rem 2rem 3rem 2rem;
 	height: auto;
 }
 #WC_bilder{
@@ -161,58 +161,45 @@ nav ul li a:hover
 .WC_bild{
 	position: relative;
 	margin: 5px;
-	height: 400px;
+	height: auto;
+	width: 50%;
 	transition: 0.5s;
 	z-index: 1;
 }
+.WC_bild:hover{
+	z-index: 3;
+	width: 65%;
+}
 .Desktop{
-	height: 600px;
-	width: 300px;
+	height: auto;
+	width: 20.3%;
 	display: inline;
 }
 .Handy{
-	height: 600px;
-	width: 150px;
+	height: auto;
+	width: 10%;
 	display: inline;
 }
-.WC_bild:hover{
-	z-index: 3;
-	height: 450px;
-}
 .Handy:hover{
-	height: 900px;
-	width: 250px;
+	height: auto;
+	width: 15%;
 }
 .Desktop:hover{
-	height: 900px;
-	width: 400px;
+	height: auto;
+	width: 30%;
 }
 .WC_pack{
 	top: 15%;
-	width: auto;
-	height: auto;
+	width: 85%;
+	height: 90%;
 	position: relative;
 	display: inline-table;
 	margin: 0 30px 0 30px;
 }
 #ContactMe{
 	background-color: rgb(35, 35, 35);
-	padding: 2rem 5rem 7rem 5rem;
+	padding: 2rem 2rem 7rem 2rem;
 	height: auto;
-}
-.contact{
-	display: inline-table;
-	margin: 7rem 5rem 0 5rem;
-	color: #fff;
-}
-.CM_ueber{
-	margin: 10px 0 30px 0;
-	font-size: 3rem;
-	display: block;
-}
-.CM_text{
-	display: block;
-	font-size: 2rem;
 }
 .svg{
 	background-color: rgb(35, 35, 35);
@@ -220,19 +207,33 @@ nav ul li a:hover
 	height: 100%;
 	margin-bottom: -4px;
 }
+.CM_ueber{
+	margin: 20px 0 15px 0;
+	color: #fff;
+	display: block;
+	font-size: 350%;
+}
+.CM_text{
+	font-size: 250%;
+	color: #fff;
+}
 #name{
 	position: relative;
-	display: block;
-	left: 3.5rem;
 	font-size: 2rem;
 	color: #fff;
+	text-align: center;
+}
+#TKbild{
+	border-bottom: solid 6px #fff;
+	width: 80%;
 }
 #bild{
 	position: relative;
 	display: inline-block;
 	left: 70%;
 	height: auto;
-	width: auto;
+	width: 22%;
+	text-align: center;
 }
 #wilkommen{
 	position: relative;
@@ -256,7 +257,22 @@ nav ul li a:hover
 		left: 5%;
 		font-size: 2.5rem;
 	}
+	#name{
+		position: relative;
+		font-size: 2rem;
+		color: #fff;
+		text-align: center;
+	}
+	#TKbild{
+		border-bottom: solid 6px #fff;
+		width: 80%;
+	}
 	#bild{
+		position: relative;
+		display: inline-block;
+		height: auto;
+		width: 40%;
+		text-align: center;
 		top: 40px;
 		left: 30%;
 	}
@@ -312,6 +328,18 @@ nav ul li a:hover
 	}
 }
 @media(max-width:950px){
+	.CM_ueber{
+		font-size: 160%;
+	}
+	.CM_text{
+		font-size: 120%;
+	}
+	#name{
+		font-size: 1.5rem;
+	}
+	#AM_bild{
+		width: 100%;
+	}
 	#WC_bilder{
 		padding: 2rem 0 3rem 0;
 		top: 10rem;
@@ -322,60 +350,53 @@ nav ul li a:hover
 		border-radius: 50px;
 		background-color: #232323;
 	}
-	#TKbild{
-		width: 80%;
+	.WC_text{
+		font-size: 1.5rem;
 	}
-	.WC_bild{
-		position: relative;
-		margin: 5px;
+	/* .Desktop{
+		width: 30%;
 		height: auto;
-		max-height: 300px;
-		width: 90%;
-		transition: 0.5s;
-		z-index: 1;
-	}
-	.WC_bild:hover{
-		z-index: 3;
-		height: 350px;
-	}
-	.Desktop{
-		width: auto;
-		height: 500px;
-	}
+	} 
 	.Handy{
-		width: auto;
-		height: 500px;
+		width: 30%;
+		height: auto;
 	}
 	.Handy:hover{
-		width: auto;
-		height: 500px;
+		width: 30%;
+		height: auto;
 	}
 	.Desktop:hover{
-		width: auto;
-		height: 500px;
-	}
-	.contact{
-		margin-left: 0;
-	}
+		width: 30%;
+		height: auto;
+	}*/
 }
 @media(max-width:950px){
 	.MQ_bild{
 		height: auto;
 		width: 70%;
 	}
-	.CM_text{
-		font-size: 2rem;
-		margin: 0;
+	.MQ_bild:hover{
+		height: auto;
+		width: 90%;
 	}
-	.CM_ueber{
-		margin: 0;
-		font-size: 1rem;
+	#CV_bild{
+		left: 10px;
+	}
+	#teil2{
+		left: 20px;
+	}
+	#teil2:hover{
+		left: 10px;
+	}
+	#MQ_über{
+		font-size: 1.5rem;
 	}
 	#wilkommen{
 		width: fit-content;
 		margin-right: 20px;
+		font-size: 1.5rem;
 	}
-	.ueberschrift{
-		font-size: 1rem;
+	#ueberschrift{
+		font-size: 2rem;
 	}
 }
