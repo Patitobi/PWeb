@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+        <title>Tobias Kassel</title>
+        <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <img src="./IMG/LOGO.png" draggable="false" href="#Home" class="logo">
+                <div class="menu-toggle"></div>
+                <nav draggable="false">
+                    <ul draggable="false">
+                        <li><a href="#Home" class="active" draggable="false">Home</a></li>
+                        <li><a href="#AboutMe" draggable="false">About Me</a></li>
+                        <li><a href="#Qualifications" draggable="false">Qualifications</a></li>
+                        <li><a href="#Website_Creaton" draggable="false">Website Creation</a></li>
+                        <li><a href="#ContactMe" draggable="false">Contact Me</a></li>
+                    </ul>
+                </nav>
+            <div class="clearfix"></div>
+        </header>
+        <main>
+            <section id="Home" class="section">
+                <a id="wilkommen">
+                    Wilkommen, auf meiner Seite
+                </a>
+                <div id="bild">
+                    <img src="../PersWeb/IMG/TobiasBild.png" id="TKbild" alt="Tobias Kessel Bild">
+                    <a id="name"><br>Tobias Kessel</a>  
+                </div>
+            </section>
+            <img src="../PersWeb/IMG/Frame 5.svg" draggable="false" alt="SVG" class="svg">
+            <section id="AboutMe" class="section">
+                <a href="./IMG/MMp.svg" download>
+                    <img src="../PersWeb/IMG/MMp.svg" draggable="false" alt="AboutMe" id="AM_bild">
+                </a>
+            </section>
+            <img src="../PersWeb/IMG/Frame 3.svg" draggable="false" alt="SVG" class="svg">
+            <section id="Qualifications" class="section">
+                <a id="ueberschrift">
+                    My Qualifications
+                </a>
+                <div id="MQ_div">
+                    <div id="zeugnisse"class="MQ_bereiche">
+                        <a id="MQ_über">Zeugnis</a>
+                        <a href="./IMG/zeugnis11.1 teil1.PNG" download>
+                            <img class="MQ_bild" src="../PersWeb/IMG/zeugnis11.1 teil1.PNG" alt="Zeugnis 11.1 Teil1" draggable="false">
+                        </a>
+                        <a href="./IMG/zeugnis11.1 teil2.PNG" download>
+                            <img id="teil2" class="MQ_bild" src="../PersWeb/IMG/zeugnis11.1 teil2.PNG" alt="Zeugnis 11.1 Teil2" draggable="false">
+                        </a>
+                    </div>
+                    <div id="CV" class="MQ_bereiche">
+                        <a id="MQ_über">CV</a>
+                        <a href="./IMG/CV png.PNG" download>
+                            <img id="CV_bild" class="MQ_bild" src="./IMG/CV png.PNG" alt="CV" draggable="false">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <img src="../PersWeb/IMG/Frame 3.svg" draggable="false" alt="SVG" class="svg">
+            <section id="Website_Creaton" class="section">
+                <a id="ueberschrift">
+                    How I created this page
+                </a>
+                <a class="text"></a>
+            <div id="WC_bilder">
+                <span class="WC_pack">
+                    <a class="WC_text">Moodboard</a><br>
+                    <a href="./IMG/Moodboard.svg" download>
+                        <img draggable="false" src="./IMG/Moodboard.svg" alt="moodboard" id="moodboard" class="WC_bild">
+                    </a>
+                </span>
+                <span class="WC_pack">
+                    <a class="WC_text">Design Persona</a><br>
+                    <a href="./IMG/MMp.svg" download>
+                        <img draggable="false" src="../PersWeb/IMG//MMp.svg" alt="Design Persona" class="WC_bild">
+                    </a>
+                </span>
+                <span class="WC_pack">
+                    <a class="WC_text">Wireframes</a><br>
+                    <a href="./IMG/Personal Website Desktop.png" download><img class="WC_bild Desktop" draggable="false" src="IMG/Personal Website Desktop.png" alt="Wireframes Desktop"></a>
+                    <a href="./IMG/Personal Website Handy.png" download><img class="WC_bild Handy" draggable="false" src="../PersWeb/IMG/Personal Website Handy.png" alt="Wireframes Handy" ></a>
+                </span>
+            </div>
+            </section>
+            <img src="../PersWeb/IMG/Frame 3.svg" draggable="false" alt="SVG" class="svg">
+            <section id="ContactMe" class="section">
+                <a id="ueberschrift">
+                    Imprint
+                </a>
+                <div id="Address" class="contact">
+                    <a class="CM_ueber">Address</a>
+                    <a class="CM_text">
+                        Hauptstraße.26<br>
+                        42540 Dormagen/Delhoven<br>
+                        Nordrhein-Westfalen<br>
+                        Germany
+                    </a>
+                </div>
+                <div id="Contact" class="contact">
+                    <a class="CM_ueber">Contact</a>
+                    <a class="CM_text">
+                        02tobias06@gmail.com<br>
+                    </a>
+                </div>
+            </section>
+            <img src="../PersWeb/IMG/Frame 4.svg" draggable="false" alt="SVG" class="svg">
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous">
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+    </body>
+</html>
